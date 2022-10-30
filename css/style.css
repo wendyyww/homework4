@@ -1,0 +1,109 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  main {
+    background-color: #efefef;
+  }
+  
+  .pricing {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+  header img {
+    width: 100%;
+    height: auto;
+    animation: 3s fadein;
+  }
+
+  .nav_links {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+ .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border: 5px solid #50C7C7;
+    margin: 10px;
+  }  
+
+  @media all and (min-width: 700px){
+    header {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    header img{
+        width: 400px;
+        height: auto;
+        justify-content: left;
+    }
+    nav {
+       justify-items: right;
+    } 
+
+    .pricing{
+        justify-content: center;
+    }
+
+    .nav_links{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        /* justify-content: space-around; */
+    }
+
+    .card{
+        width: 300px;
+        flex-wrap: wrap;
+    }
+
+    .gallery{
+        /* flex-wrap:nowrap; */
+        flex-direction: row;
+    }
+
+    .gallery img{
+        width: 300px;
+        flex-wrap: wrap;
+    }
+
+}
+
+  @media (prefers-reduced-motion) {
+        header img {
+            animation: none;
+        }
+    }
+  
+
+  
